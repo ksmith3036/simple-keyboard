@@ -144,7 +144,7 @@ public class RichInputMethodManager {
         public SubtypeList(final Context context) {
             mPrefs = PreferenceManagerCompat.getDeviceSharedPreferences(context);
 
-            final String prefSubtypes = Settings.readPrefSubtypes(mPrefs);
+            final String prefSubtypes = Settings.readPrefSubtypes(mPrefs); // Tom streng for umodifsert app ved første oppstart
             final List<Subtype> subtypes = SubtypePreferenceUtils.createSubtypesFromPref(
                     prefSubtypes, context.getResources());
             if (subtypes == null || subtypes.size() < 1) {
@@ -324,7 +324,7 @@ public class RichInputMethodManager {
          * @param subtype the subtype to set as current.
          * @return whether the current subtype was set to the requested subtype.
          */
-        public synchronized boolean setCurrentSubtype(final Subtype subtype) {
+        public synchronized boolean setCurrentSubtype(final Subtype subtype) { // Kalles når man skifter språk
             if (getCurrentSubtype().equals(subtype)) {
                 // nothing to do
                 return true;

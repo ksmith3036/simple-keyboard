@@ -20,7 +20,7 @@
         android:key="auto_cap"
         android:title="@string/auto_cap"
         android:summary="@string/auto_cap_summary"
-        android:defaultValue="true"
+        android:defaultValue="false"
         android:persistent="true" />
     <CheckBoxPreference
         android:key="pref_show_number_row"

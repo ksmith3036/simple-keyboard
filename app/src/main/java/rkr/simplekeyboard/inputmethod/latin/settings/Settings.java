@@ -159,7 +159,8 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
     }
 
     public static String readPrefSubtypes(final SharedPreferences prefs) {
-        return prefs.getString(PREF_ENABLED_SUBTYPES, "");
+//        return prefs.getString(PREF_ENABLED_SUBTYPES, ""); // Tom streng medfører at kalleren finner tastaturspråk som best matcher språket telefonen er satt til
+        return prefs.getString(PREF_ENABLED_SUBTYPES, "nb:nordic"); // Bruker heller Norsk bokmål som standard tastaturspråk
     }
 
     public static void writePrefSubtypes(final SharedPreferences prefs, final String prefSubtypes) {
