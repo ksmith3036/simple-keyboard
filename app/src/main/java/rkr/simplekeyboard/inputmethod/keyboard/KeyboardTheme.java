@@ -106,7 +106,7 @@ public final class KeyboardTheme {
     public static KeyboardTheme getKeyboardTheme(final SharedPreferences prefs) {
         final String themeIdString = prefs.getString(KEYBOARD_THEME_KEY, null);
         if (themeIdString == null) {
-            return searchKeyboardThemeById(THEME_ID_LIGHT);
+            return searchKeyboardThemeById(THEME_ID_DARK);
         }
         try {
             final int themeId = Integer.parseInt(themeIdString);

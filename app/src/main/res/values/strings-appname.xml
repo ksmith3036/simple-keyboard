@@ -19,6 +19,6 @@
 -->
 
 <resources>
-    <string name="english_ime_name" translatable="false">NDMA Keyboard</string>
-    <string name="english_ime_settings" translatable="false">NDMA Keyboard Settings</string>
+    <string name="english_ime_name" translatable="false">NDMA Simple Keyboard</string>
+    <string name="english_ime_settings" translatable="false">NDMA Simple Keyboard Settings</string>
 </resources>
